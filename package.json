@@ -1,0 +1,26 @@
+{
+  "name": "project_finalm2_c011",
+  "version": "0.0.0",
+  "description": "> :construction: Projeto em construção :construction:",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index",
+    "dev": "nodemon index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Joabesued/Project_finalM2_C011.git"
+  },
+  "author": "JoabesueD",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Joabesued/Project_finalM2_C011/issues"
+  },
+  "homepage": "https://github.com/Joabesued/Project_finalM2_C011#readme",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.3",
+    "nodemon": "^2.0.15"
+  }
+}
