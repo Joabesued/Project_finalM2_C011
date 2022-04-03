@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/itens.css">
+    <title>Meus itens</title>
+</head>
+<body>
+    <header>
+        <div class="principal">
+            <nav class="logo"><a href=""><img src="img/1-removebg-preview.png" alt="logo" width="155"></a>
+              <ul>
+                  <li><a href="">Início</a></li>
+                  <li><a href="">Meus itens</a></li>
+                  <li><a href="">Sobre</a></li>
+              </ul>
+          </nav>
+        </header>
+        <main>
+            <section id="cards">
+                <% itens.forEach((itens) => { %>
+            <div class="cards">
+                <img src=" <%= itens.imagem %>" alt="">
+                <h2> <%= itens.nome %></h2>
+                <p class="tamanho"> <%=  itens.tamanho %></p>
+                <p> <%=  itens.categoria %></p>
+            </div>
+            <% }) %>
+            </section>
+        </main>
+        
+</body>
+</html>
