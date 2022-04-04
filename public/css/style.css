@@ -124,3 +124,22 @@ nav ul li a:hover{
     transition: transform 0.4s;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   }
+
+  footer {
+    background-color: #747487;
+    padding: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+footer p {
+   width: 100%;
+   color: #fff;
+   text-align: center;
+}
+
+footer p a {
+    color: #000000;
+    text-decoration: none;
+}
