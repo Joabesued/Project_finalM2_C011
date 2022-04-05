@@ -20,12 +20,21 @@
                 <p class="tamanho"> <%=  itens.tamanho %></p>
                 <p> <%=  itens.descricao %></p>
 
-                <a href="/update/<%= itens.id %>">Editar</a>
-                <a id="del" href="">Apagar</a>
+                <a id="editar" href="/getById/<%= itens.id %>/put">Editar</a>
+                <a id="del" href="/getById/<%= itens.id %>/delete">Apagar</a>
             </div>
             <% }) %>
             </section>
         </main>
+
+        <% if (itensPut != null) { %>
+        <%- include('./componentes/modalPut') %>
+         <% } %>
+
+         <% if (itensDel != null) { %>
+            <%- include('./componentes/modalDel') %>
+             <% } %>
+ 
         <%- include('./componentes/footer') %>
 </body>
 </html>

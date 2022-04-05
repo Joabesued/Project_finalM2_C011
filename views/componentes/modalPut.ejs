@@ -1,0 +1,30 @@
+<section class="modal-overlay" id="ovarlay">
+    <div class="modal" id="modal">
+        <div class="modal-header">
+            <h3>Atualizar item</h3>
+            <a href="/meus-itens" id="close-modal-put">X</a>
+        </div>
+
+        <div class="modal-body">
+            <form class="form-modal" action="/update/<%= itensPut.id %>" method="POST">
+
+                <label for="nome">Nome: </label>
+                <input type="text" id="nome" name="nome" value="<%=itensPut.nome%>">
+
+                <label for="descricao">Descrição: </label>
+                <input type="text" id="descricao" name="descricao" value="<%=itensPut.descricao%>">
+
+                <label for="marca">Marca: </label>
+                <input type="text" id="marca" name="marca" value="<%=itensPut.marca%>">
+
+                <label for="imagem">Url da imagem: </label>
+                <input type="text" id="imagem" name="imagem" value="<%=itensPut.imagem%>">
+
+                <button id="btnCadastrar" type="submit">Atualizar</button>
+              
+            </form>
+        </section>
+        </div>
+
+    </div>
+</section>
